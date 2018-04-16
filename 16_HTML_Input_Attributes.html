@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Attributes</title>
+    <style>
+    div {
+    	background-color: seagreen;
+    	color: black;
+    	padding: 10px;
+    	font-family: "comic sans ms",sans=serif;
+    	margin: 5px;
+    	width: 400px;
+    }
+</style>
+</head>
+<body>
+
+    <!-- input attributes value , readonly , size , rows , cols-->
+  
+  <!--value-->
+  <h2> HTML Input Attributes</h2>
+     <div>
+     	<label>UserName</label>
+     	<input type="text"value="situ">
+     </div>
+
+     <!--readonly-->
+     <h2>Input Attribute</h2>
+     <div>
+     	<label>UserName</label>
+     	<input type="text" value="situ" readonly>
+     </div>
+
+  <!--disable-->
+  <h2>Input Attribute</h2>
+     <div>
+     	<label>UserName</label>
+     	<input type="text" value="situ" disabled>
+     </div>
+
+    <!--size-->
+   <h2>Input Attribute</h2>
+     <div>
+     	<label>UserName</label>
+     	<input type="text" size= "30">
+     </div>
+
+     <!--rows & cols-->
+     <div>
+     	<label>Your Comments</label>
+     	<textarea rows="5" cols="20"></textarea>
+     </div>
+
+
+    <!-- HTML 5 Form Attributes required ,
+    no-validate , autofocus , pattern , placeholder -->
+
+    <h2> HTML5 Input Attributes</h2>
+
+    <div>
+     <form>
+       <label>User Name*<span style="color: red"></span>
+       </label>
+       <input type ="text" required>
+       <input type="submit" value="submit">
+       </form>
+      </div>
+
+
+<!--novalidate-->
+<div>
+	<form novalidate>
+		<label>Enter Your Email</label>
+		<input type="email">
+		<input type="submit" value="submit">
+	</form>
+</div>
+
+<!--autfocus-->
+<div>
+	<form>
+		<label>User Name</label>
+		<input type="text"autofocus>
+		<input type="submit" value="submit">
+	</form>
+</div>
+
+<!--placeholder-->
+   <div>
+	<form>
+		<label>User Name</label>
+		<input type="placeholder" palceholder="enter user name">
+		<input type="submit" value="submit">
+	</form>
+</div>
+
+
+<!--pattern-->
+ <div>
+	<form>
+		<label>Twitter User Name</label>
+		<input type="text" pattern="^[A-Za-z0-9_]{1,15}">
+		<input type="submit" value="submit">
+	</form>
+</div>
+
+
+</body>
+</html>
